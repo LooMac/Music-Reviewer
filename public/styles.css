@@ -1,0 +1,32 @@
+body {
+    /* Setting a dark background color for the entire page. */
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+
+.main-header {
+    /* Use flex such that the header elements appear in a row */
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-header h1,h2,b,a{
+    text-decoration: none;
+    text-shadow: whitesmoke 1px 0 1.25rem;
+    color: antiquewhite;
+}
+
+.main-header h3{
+    color: grey;
+}
+
+.main-nav ul {
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
