@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     /* Setting a dark background color for the entire page. */
     background-color: #1e1e1e;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,11 +8,11 @@ body {
 
 .main-header {
     /* Use flex such that the header elements appear in a row */
-    margin-left: 2rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 .main-header h1,h2,b,a {
@@ -24,11 +25,38 @@ body {
     color: grey;
 }
 
+.main-nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    bottom: 0;    
+    width: 8rem;
+    padding-top: 6rem;
+    padding-right: 3rem;
+    display: flex;
+    background: transparent;
+    z-index: 1000;
+}
+
+hr{
+    color: antiquewhite;
+    width: 100vw;
+}
+
+.main-nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: antiquewhite;
+    pointer-events: none;
+}
 .main-nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    width: fit-content;
-    align-items: center;
+    gap: 2rem;
+    text-align: center;
 }
-
