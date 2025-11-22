@@ -2,6 +2,10 @@
     <div class="main-header">
         <a href="index.php"><h1>Revu</h1></a>
         <h3>Your go-to platform for music reviews from <b>real</b> music fans</h3>
+        <form class="main-search" action="search.php" method="GET">
+            <input type="text" name="query" placeholder="Search reviews, artists, albums..." required>
+            <button type="submit"><b>Search</b></button>
+        </form>
     </div>
     <hr>
     <nav class="main-nav">
